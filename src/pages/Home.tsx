@@ -87,9 +87,9 @@ const Home = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary via-secondary to-accent p-1 shadow-glow">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
-                    src="https://imags-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    src="../profile.png" 
                     alt="Hersi K." 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[center_10%]"
                   />
                 </div>
               </div>

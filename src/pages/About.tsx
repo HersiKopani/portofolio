@@ -36,7 +36,7 @@ const About = () => {
                   <img 
                     src="/../../profile.png"  
                     alt="Hersi K." 
-                    className="w-full h-full object-cover"
+                    className="w-80%] h-full object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/30 rounded-full blur-xl -z-10"></div>
