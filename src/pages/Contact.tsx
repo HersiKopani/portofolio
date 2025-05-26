@@ -29,7 +29,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium mb-1">Location</h4>
-                      <p className="text-gray-400">Bandung, Indonesia</p>
+                      <p className="text-gray-400">Albania, WorldWide</p>
                     </div>
                   </div>
                   
@@ -40,21 +40,11 @@ const Contact = () => {
                     <div>
                       <h4 className="font-medium mb-1">Email</h4>
                       <a 
-                        href="mailto:contact@ekizulfar.com" 
+                        href="mailto:hersi.kopani@gmail.com" 
                         className="text-gray-400 hover:text-primary transition-colors"
                       >
-                        contact@ekizulfar.com
+                        hersi.kopani@gmail.com
                       </a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="p-3 bg-primary/20 rounded-lg mr-4">
-                      <Phone size={20} className="text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Phone</h4>
-                      <p className="text-gray-400">Available upon request</p>
                     </div>
                   </div>
                 </div>
@@ -98,24 +88,6 @@ const Contact = () => {
             <div className="lg:col-span-3">
               <ContactForm />
             </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Map Section */}
-      <section className="py-16 bg-background-dark/50">
-        <div className="container-custom">
-          <div className="rounded-xl overflow-hidden h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56211042157!2d107.54313908859444!3d-6.903475341602078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1712151485584!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Bandung, Indonesia Map"
-            ></iframe>
           </div>
         </div>
       </section>
