@@ -27,431 +27,297 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
-    id: 'ecommerce-platform',
-    title: 'E-Commerce Platform',
-    description: 'A fully responsive e-commerce platform with shopping cart, user authentication, and payment integration.',
-    detailedDescription: 'This e-commerce platform offers a comprehensive online shopping experience with features like product browsing, filtering, user accounts, shopping cart functionality, and secure checkout with multiple payment options. The admin dashboard allows for complete inventory management, order processing, and analytics.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
-    demoUrl: 'https://ecommerce-demo.ekizulfar.com',
-    githubUrl: 'https://github.com/HersiKopani/ecommerce-platform',
-    features: [
-      'User authentication and profile management',
-      'Product catalog with search and filter functionality',
-      'Shopping cart and wishlist management',
-      'Secure checkout with Stripe payment integration',
-      'Order tracking and history',
-      'Admin dashboard for inventory and order management',
-      'Responsive design for all devices'
+    "id": "volvo-factory-management",
+    "title": "Volvo Truck Factory Management System",
+    "description": "A backend system to manage global truck manufacturing workflows, ensuring compliance, optimization, and high scalability.",
+    "detailedDescription": "The system supported custom taxation modules for 60+ countries and optimized backend APIs for performance. Implemented user rate-limiting and system health monitoring features. Enhanced factory software reliability and ensured compliance with international audit regulations.",
+    "image": "../../volvo1.png",
+    "tags": ["Java", "Spring Boot", "REST API", "JAX-RS", "SQL Server", "AWS"],
+    "demoUrl": "",
+    "githubUrl": "",
+    "features": [
+      "Multi-country taxation module",
+      "System performance enhancements",
+      "User call rate-limiting",
+      "Compliance reporting integration",
+      "Factory process analytics"
     ],
-    problemStatement: 'Small businesses often struggle to establish an online presence with a limited budget. Existing e-commerce solutions can be expensive, complex to set up, or lack customization options.',
-    solution: 'I developed a cost-effective, user-friendly e-commerce platform that can be quickly customized and deployed for small businesses. The solution provides essential e-commerce functionality while being easy to manage without technical expertise.',
-    techStack: [
+    "problemStatement": "Volvo needed a unified backend for truck manufacturing operations across multiple countries with unique tax regulations.",
+    "solution": "Built a modular, scalable system with optimized APIs and compliance-ready features tailored to international standards.",
+    "techStack": [
       {
-        category: 'Frontend',
-        items: ['React', 'Redux', 'SCSS', 'Framer Motion', 'Material UI']
+        "category": "Backend",
+        "items": ["Java", "Spring Boot","MicroService", "Redis"]
       },
       {
-        category: 'Backend',
-        items: ['Node.js', 'Express', 'MongoDB', 'JWT Authentication']
+        "category": "Database",
+        "items": ["PostgreSql", "Redis"]
       },
       {
-        category: 'Payment Processing',
-        items: ['Stripe API', 'PayPal Integration']
-      },
-      {
-        category: 'Deployment',
-        items: ['Docker', 'AWS', 'CI/CD Pipeline']
+        "category": "Cloud & Ops",
+        "items": ["Azure","CI/CD", "DataDog", "Grafana"]
       }
     ],
-    challenges: [
+    "challenges": [
       {
-        title: 'Shopping Cart Persistence',
-        description: 'Implementing a cart system that persisted across sessions for both logged-in and guest users required a dual approach using localStorage and database storage.'
-      },
-      {
-        title: 'Payment Gateway Integration',
-        description: 'Integrating multiple payment gateways while ensuring security compliance and handling transaction edge cases was complex and required extensive testing.'
-      },
-      {
-        title: 'Performance Optimization',
-        description: 'The product catalog needed to load quickly even with hundreds of items. This was achieved through pagination, lazy loading, and efficient database queries.'
+        "title": "Taxation Customization",
+        "description": "Designing a flexible taxation engine for 60+ countries with unique regulatory requirements."
       }
     ],
-    lessons: [
-      'Using a state management library early in development prevents complexity later',
-      'Modular architecture is essential for maintainable e-commerce platforms',
-      'Comprehensive testing is critical for payment processing systems',
-      'User feedback should be incorporated throughout the development process'
+    "lessons": [
+      "Early modular design prevents later rework",
+      "Rate limiting is essential for performance under load"
     ],
-    futureImprovements: [
-      'Implement an AI-powered recommendation engine',
-      'Add multi-language support',
-      'Develop a mobile app version',
-      'Integrate with additional payment gateways',
-      'Add advanced analytics dashboard'
+    "futureImprovements": [
+      "Real-time factory dashboard",
+      "Predictive maintenance integration"
     ],
-    screenshots: [
-      'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/5632398/pexels-photo-5632398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/5632371/pexels-photo-5632371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    ]
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
   },
   {
-    id: 'task-management-app',
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, notifications, and team workspaces.',
-    detailedDescription: 'This task management application enables teams to collaborate efficiently through shared workspaces, task assignments, progress tracking, and real-time notifications. It features Kanban boards, calendar views, and detailed reporting to help teams stay organized and productive.',
-    image: 'https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['Vue.js', 'Firebase', 'Tailwind CSS', 'WebSockets', 'Chart.js'],
-    demoUrl: 'https://taskmanager-demo.ekizulfar.com',
-    githubUrl: 'https://github.com/HersiKopani/task-management-app',
-    features: [
-      'Team workspaces with role-based permissions',
-      'Kanban boards with drag-and-drop functionality',
-      'Task creation with attachments, due dates, and priority levels',
-      'Real-time notifications and updates',
-      'Calendar and timeline views',
-      'Time tracking and reporting',
-      'Integration with Google Calendar and Slack'
+    "id": "walgreens-store-system",
+    "title": "Walgreens Pharmacy Store System",
+    "description": "A scalable cloud-native system for managing retail pharmacy operations and real-time store analytics.",
+    "detailedDescription": "Led a team to deliver a suite of microservices for Walgreens, including real-time data streaming, inventory management, and secure API integrations. Enabled robust analytics through Kafka and ensured test-driven development practices.",
+    "image": "../../volvo1.png",
+    "tags": ["Java", "Spring Boot", "Kafka", "JUnit", "Mockito", "Azure"],
+    "demoUrl": "",
+    "githubUrl": "",
+    "features": [
+      "Real-time data streaming via Kafka",
+      "Microservices for pharmacy operations",
+      "Secure REST APIs",
+      "Agile development pipeline",
+      "Comprehensive testing and CI/CD"
     ],
-    problemStatement: 'Remote teams often struggle with task coordination, progress visibility, and effective collaboration across time zones, leading to miscommunication and missed deadlines.',
-    solution: 'I created a real-time task management platform that provides multiple project views, automated notifications, and comprehensive team collaboration features to keep everyone aligned regardless of location.',
-    techStack: [
+    "problemStatement": "Walgreens needed a modernized pharmacy system capable of handling high volume data and improving store operations.",
+    "solution": "Delivered robust microservices and real-time capabilities using Java, Kafka, and cloud-native infrastructure.",
+    "techStack": [
       {
-        category: 'Frontend',
-        items: ['Vue.js 3', 'Vuex', 'Tailwind CSS', 'Composition API']
+        "category": "Backend",
+        "items": ["Java", "Spring Boot", "JAX-RS"]
       },
       {
-        category: 'Backend',
-        items: ['Firebase', 'Cloud Functions', 'Cloud Firestore']
+        "category": "Streaming",
+        "items": ["Apache Kafka"]
       },
       {
-        category: 'Real-time Features',
-        items: ['Firebase Realtime Database', 'WebSockets']
-      },
-      {
-        category: 'Integrations',
-        items: ['Slack API', 'Google Calendar API', 'Zapier']
+        "category": "Cloud",
+        "items": ["Azure"]
       }
     ],
-    challenges: [
+    "challenges": [
       {
-        title: 'Real-time Data Synchronization',
-        description: 'Ensuring all users see the same data in real-time while maintaining performance required careful implementation of data listeners and efficient state management.'
-      },
-      {
-        title: 'Complex Permission System',
-        description: 'Building a flexible role-based permission system that worked across workspaces, projects, and individual tasks required a sophisticated access control model.'
-      },
-      {
-        title: 'Offline Functionality',
-        description: 'Implementing offline capabilities with data synchronization once connectivity is restored was challenging but essential for a seamless user experience.'
+        "title": "System Scalability",
+        "description": "Architecting microservices that scale under high data throughput while maintaining consistency."
       }
     ],
-    lessons: [
-      'Real-time applications require thorough planning for state management',
-      'Carefully designing the database schema is crucial for scalable applications',
-      'User testing revealed the importance of intuitive UX for productivity tools',
-      'Firebase security rules require extensive testing to ensure proper data protection'
+    "lessons": [
+      "Team mentoring improves overall output quality",
+      "Real-time architecture enhances customer experience"
     ],
-    futureImprovements: [
-      'Implement AI-assisted task prioritization',
-      'Add custom workflow automation tools',
-      'Develop advanced reporting and analytics',
-      'Create a mobile application with push notifications',
-      'Add time tracking with automatic reporting'
+    "futureImprovements": [
+      "Predictive inventory analytics",
+      "Integration with wearable health devices"
     ],
-    screenshots: [
-      'https://images.pexels.com/photos/6956665/pexels-photo-6956665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/6956662/pexels-photo-6956662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/6956904/pexels-photo-6956904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    ]
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+  },  
+  {
+    "id": "invoice-validation-system",
+    "title": "Invoice Validation System",
+    "description": "Automated invoice validation with electronic signature integration and CRM synchronization.",
+    "detailedDescription": "Developed an invoice validation system with encrypted electronic signatures, CRM sync via webhooks, and failure recovery using service bus. Optimized manual processes and improved data integrity between systems.",
+    "image": "../../volvo1.png",
+    "tags": ["Node.js", "CRM", "Webhooks", "MongoDB", "Service Bus"],
+    "demoUrl": "",
+    "githubUrl": "",
+    "features": [
+      "Automated electronic signature validation",
+      "CRM system integration",
+      "Service bus for failure handling",
+      "Encrypted data storage",
+      "Manual task elimination"
+    ],
+    "problemStatement": "Manual invoice validation was time-consuming, error-prone, and lacked digital security.",
+    "solution": "Built a secure, automated platform with CRM sync and failure recovery to streamline and safeguard invoice handling.",
+    "techStack": [
+      {
+        "category": "Backend",
+        "items": ["Node.js", "Express"]
+      },
+      {
+        "category": "Database",
+        "items": ["MongoDB"]
+      },
+      {
+        "category": "Integration",
+        "items": ["Dynamics CRM", "Service Bus"]
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Encrypted Signature Processing",
+        "description": "Handling secure digital signatures without introducing latency or storage issues."
+      }
+    ],
+    "lessons": [
+      "Event-driven architecture enhances system resilience",
+      "Data sync requires precise schema alignment"
+    ],
+    "futureImprovements": [
+      "AI fraud detection module",
+      "Invoice audit trail visualization"
+    ],
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+  },  
+  {
+    "id": "service-pay-system",
+    "title": "Service Pay - Bank System",
+    "description": "A robust backend platform for managing bank payments and service fees with high reliability.",
+    "detailedDescription": "Created RESTful APIs for payment management using Spring Boot. Developed dashboards, data models, and optimized SQL queries. Integrated service logs and metrics using Grafana and Datadog for system observability.",
+    "image": "../../volvo1.png",
+    "tags": ["Java", "Spring Boot", "MySQL", "Grafana", "Datadog"],
+    "demoUrl": "",
+    "githubUrl": "",
+    "features": [
+      "Bank transaction logging",
+      "Secure payment endpoints",
+      "Performance-optimized database queries",
+      "Dashboard analytics",
+      "Monitoring with Grafana & Datadog"
+    ],
+    "problemStatement": "Banks needed a reliable and efficient system for managing service payments with full observability.",
+    "solution": "Delivered a secure and monitored backend that tracks transactions and provides insightful analytics.",
+    "techStack": [
+      {
+        "category": "Backend",
+        "items": ["Java", "Spring Boot"]
+      },
+      {
+        "category": "Database",
+        "items": ["MySQL"]
+      },
+      {
+        "category": "Monitoring",
+        "items": ["Grafana", "Datadog"]
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Query Optimization",
+        "description": "Reducing latency in transaction-heavy operations with optimized SQL queries and indexes."
+      }
+    ],
+    "lessons": [
+      "Early monitoring setup simplifies debugging",
+      "Clean APIs are critical for secure bank integrations"
+    ],
+    "futureImprovements": [
+      "Blockchain-based ledger",
+      "AI-based fraud detection"
+    ],
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
   },
   {
-    id: 'fitness-tracker',
-    title: 'Fitness Tracker Application',
-    description: 'A comprehensive fitness tracking application with workout plans, progress tracking, and nutrition monitoring.',
-    detailedDescription: 'This fitness application helps users achieve their health goals by tracking workouts, nutrition, and overall progress. It includes customizable workout plans, exercise demonstrations, calorie counting, and visual progress charts to keep users motivated and informed about their fitness journey.',
-    image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['React Native', 'TypeScript', 'Redux', 'Node.js', 'MongoDB'],
-    demoUrl: 'https://fitness-demo.ekizulfar.com',
-    githubUrl: 'https://github.com/HersiKopani/fitness-tracker',
-    features: [
-      'Personalized workout plan creation',
-      'Exercise library with video demonstrations',
-      'Nutrition tracking and meal planning',
-      'Progress tracking with visual charts',
-      'Workout reminders and notifications',
-      'Community challenges and achievements',
-      'Integration with wearable devices'
+    "id": "gym-dashboard-system",
+    "title": "Gym Dashboard System",
+    "description": "Interactive dashboard for managing gym memberships, class schedules, and trainer bookings.",
+    "detailedDescription": "Built a modern React-based dashboard to track gym activities, automate membership renewals, and integrate with trainers' calendars. Includes user profiles, payment logs, and real-time booking status.",
+    "image": "../../volvo1.png",
+    "tags": ["React", "Node.js", "MongoDB", "JWT", "Material UI"],
+    "demoUrl": "",
+    "githubUrl": "",
+    "features": [
+      "Member profile and subscription tracking",
+      "Class and trainer schedule management",
+      "Real-time booking system",
+      "Secure login with JWT",
+      "Responsive UI design"
     ],
-    problemStatement: 'Many people struggle to maintain fitness routines and track their progress effectively, leading to decreased motivation and abandoned fitness goals.',
-    solution: 'I developed a comprehensive fitness tracking platform that combines workout planning, progress visualization, and community features to help users stay motivated and track their fitness journey with minimal effort.',
-    techStack: [
+    "problemStatement": "Gyms lacked a centralized system to manage operations and provide a seamless user experience.",
+    "solution": "Developed an intuitive dashboard that streamlined gym operations and improved member engagement.",
+    "techStack": [
       {
-        category: 'Mobile App',
-        items: ['React Native', 'TypeScript', 'Redux', 'React Navigation']
+        "category": "Frontend",
+        "items": ["React", "Material UI"]
       },
       {
-        category: 'Backend',
-        items: ['Node.js', 'Express', 'MongoDB', 'GraphQL']
+        "category": "Backend",
+        "items": ["Node.js", "Express", "JWT"]
       },
       {
-        category: 'Data Visualization',
-        items: ['Victory Charts', 'D3.js', 'SVG Animations']
-      },
-      {
-        category: 'Device Integration',
-        items: ['HealthKit (iOS)', 'Google Fit (Android)', 'Bluetooth LE']
+        "category": "Database",
+        "items": ["MongoDB"]
       }
     ],
-    challenges: [
+    "challenges": [
       {
-        title: 'Cross-platform Consistency',
-        description: 'Ensuring the app worked consistently across iOS and Android while maintaining native feel required careful component design and platform-specific optimizations.'
-      },
-      {
-        title: 'Wearable Device Integration',
-        description: 'Integrating with various fitness wearables and health platforms required implementing multiple APIs and handling diverse data formats.'
-      },
-      {
-        title: 'Offline Workout Tracking',
-        description: 'Enabling users to track workouts without internet connection and syncing data later required a robust local storage and conflict resolution system.'
+        "title": "Real-Time Bookings",
+        "description": "Ensuring consistent booking status across users without race conditions."
       }
     ],
-    lessons: [
-      'User engagement increases significantly with visual progress tracking',
-      'Platform-specific code should be isolated early in development',
-      'Fitness apps require careful consideration of privacy concerns',
-      'Community features greatly enhance user retention'
+    "lessons": [
+      "Modular frontend components enable reusability",
+      "Real-time UX enhances customer satisfaction"
     ],
-    futureImprovements: [
-      'Implement AI coaching with form correction',
-      'Add social sharing and competition features',
-      'Develop personalized nutrition recommendations',
-      'Expand wearable device compatibility',
-      'Create video-based virtual workout sessions'
+    "futureImprovements": [
+      "Mobile app integration",
+      "Fitness progress tracking module"
     ],
-    screenshots: [
-      'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/7991663/pexels-photo-7991663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    ]
-  },
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+  },  
   {
-    id: 'smart-home-dashboard',
-    title: 'Smart Home Dashboard',
-    description: 'An IoT dashboard for monitoring and controlling smart home devices with automation capabilities.',
-    detailedDescription: 'This smart home dashboard provides a central interface for monitoring and controlling all connected devices in a home. It features real-time device status updates, automation rules, energy usage analytics, and security monitoring. The system integrates with popular smart home ecosystems and offers both web and mobile interfaces.',
-    image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['React', 'Node.js', 'MQTT', 'WebSockets', 'Chart.js', 'Docker'],
-    demoUrl: 'https://smarthome-demo.ekizulfar.com',
-    githubUrl: 'https://github.com/HersiKopani/smart-home-dashboard',
-    features: [
-      'Unified control of smart devices from multiple ecosystems',
-      'Real-time monitoring with interactive floor plan view',
-      'Automation rule creation with visual editor',
-      'Energy usage analytics and optimization suggestions',
-      'Security camera integration and alert system',
-      'Voice control capabilities',
-      'Historical data logging and trend analysis'
+    "id": "e-tourism-albania",
+    "title": "E-Tourism Platform for Albania",
+    "description": "A central platform for tour agencies across Albania, featuring tour listings, booking, and multilingual support.",
+    "detailedDescription": "Designed an inclusive tourism portal integrating listings from multiple tour agencies. Supported filtering by region, pricing, and activity type. Built admin panel for agency onboarding and tour management.",
+    "image": "../../volvo1.png",
+    "tags": ["React", "Node.js", "PostgreSQL", "i18n", "AWS"],
+    "demoUrl": "",
+    "githubUrl": "",
+    "features": [
+      "Unified agency and tour listing",
+      "Real-time booking and reviews",
+      "Admin management dashboard",
+      "Multi-language support",
+      "Interactive map integration"
     ],
-    problemStatement: 'Smart home devices often use different protocols and apps, creating a fragmented user experience that limits the potential of home automation.',
-    solution: 'I built a unified dashboard that integrates multiple smart home ecosystems into a single interface, enabling cross-platform automation and providing valuable insights through data aggregation and analysis.',
-    techStack: [
+    "problemStatement": "Tourism in Albania lacked a unified digital platform to promote regional offerings and streamline bookings.",
+    "solution": "Developed an all-in-one e-tourism platform connecting agencies and tourists with scalable infrastructure.",
+    "techStack": [
       {
-        category: 'Frontend',
-        items: ['React', 'Redux', 'Three.js', 'Material-UI', 'Chart.js']
+        "category": "Frontend",
+        "items": ["React", "i18n"]
       },
       {
-        category: 'Backend',
-        items: ['Node.js', 'Express', 'MongoDB', 'Redis']
+        "category": "Backend",
+        "items": ["Node.js", "Express"]
       },
       {
-        category: 'IoT Communication',
-        items: ['MQTT', 'WebSockets', 'Zigbee', 'Z-Wave', 'REST APIs']
+        "category": "Database",
+        "items": ["PostgreSQL"]
       },
       {
-        category: 'Deployment',
-        items: ['Docker', 'Raspberry Pi', 'AWS IoT']
+        "category": "Cloud",
+        "items": ["AWS"]
       }
     ],
-    challenges: [
+    "challenges": [
       {
-        title: 'Protocol Integration',
-        description: 'Integrating various IoT protocols (Zigbee, Z-Wave, WiFi) required building adapters and protocol translators to provide a consistent interface.'
-      },
-      {
-        title: 'Real-time Performance',
-        description: 'Ensuring the dashboard remained responsive while handling real-time updates from dozens of devices required efficient data processing and UI optimizations.'
-      },
-      {
-        title: 'Automation Engine',
-        description: 'Building a flexible automation engine that could handle complex conditions across different device types and protocols was architecturally challenging.'
+        "title": "Agency Integration",
+        "description": "Creating a scalable structure for onboarding multiple agencies with individual needs."
       }
     ],
-    lessons: [
-      'IoT systems benefit greatly from standardized internal protocols',
-      'Local processing reduces latency and improves reliability for critical functions',
-      'User interfaces for automation should balance power with simplicity',
-      'Thorough error handling is essential for systems controlling physical devices'
+    "lessons": [
+      "Localization is critical for tourism platforms",
+      "Data consistency must be maintained across high-write systems"
     ],
-    futureImprovements: [
-      'Implement AI-based anomaly detection for device behavior',
-      'Add predictive maintenance notifications',
-      'Develop geofencing capabilities for location-based automation',
-      'Create more advanced energy optimization algorithms',
-      'Add natural language processing for automation creation'
+    "futureImprovements": [
+      "AI-based travel planner",
+      "Mobile app with offline support"
     ],
-    screenshots: [
-      'https://images.pexels.com/photos/3885036/pexels-photo-3885036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/7054393/pexels-photo-7054393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    ]
-  },
-  {
-    id: 'learning-management-system',
-    title: 'Learning Management System',
-    description: 'A comprehensive LMS with course creation, student progress tracking, and interactive learning features.',
-    detailedDescription: 'This Learning Management System provides educational institutions and corporate training departments with a complete platform for creating, delivering, and tracking online courses. It includes features for content creation, student enrollment, progress tracking, assessments, and certification. The system emphasizes engagement through interactive content and social learning components.',
-    image: 'https://images.pexels.com/photos/5905710/pexels-photo-5905710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['Angular', 'TypeScript', 'Node.js', 'PostgreSQL', 'WebRTC', 'AWS'],
-    demoUrl: 'https://lms-demo.ekizulfar.com',
-    githubUrl: 'https://github.com/HersiKopani/learning-management-system',
-    features: [
-      'Course creation with multimedia content support',
-      'Student enrollment and progress tracking',
-      'Interactive quizzes and assessments',
-      'Live virtual classrooms with video conferencing',
-      'Discussion forums and collaborative projects',
-      'Certification generation and verification',
-      'Analytics dashboard for instructors and administrators'
-    ],
-    problemStatement: 'Educational institutions and corporate training programs struggle with delivering engaging online learning experiences that maintain student motivation and effectively track learning outcomes.',
-    solution: 'I developed a comprehensive LMS that combines interactive content delivery, social learning features, and detailed analytics to create engaging learning experiences with measurable outcomes.',
-    techStack: [
-      {
-        category: 'Frontend',
-        items: ['Angular', 'TypeScript', 'SCSS', 'RxJS', 'NgRx']
-      },
-      {
-        category: 'Backend',
-        items: ['Node.js', 'Express', 'PostgreSQL', 'TypeORM']
-      },
-      {
-        category: 'Real-time Features',
-        items: ['WebSockets', 'WebRTC', 'Socket.io']
-      },
-      {
-        category: 'Content Delivery',
-        items: ['AWS S3', 'CloudFront', 'FFmpeg', 'Video.js']
-      }
-    ],
-    challenges: [
-      {
-        title: 'Video Streaming Optimization',
-        description: 'Implementing adaptive bitrate streaming for video content across diverse network conditions required complex media handling and CDN integration.'
-      },
-      {
-        title: 'Assessment Engine',
-        description: 'Creating a flexible assessment system that supported various question types, automated grading, and plagiarism detection required sophisticated data models.'
-      },
-      {
-        title: 'Learning Analytics',
-        description: 'Developing meaningful learning analytics that could provide actionable insights required collecting and processing large amounts of interaction data.'
-      }
-    ],
-    lessons: [
-      'Video content delivery requires careful optimization for different devices and networks',
-      'Social learning features significantly increase engagement and completion rates',
-      'Learning paths should be adaptable based on student performance',
-      'Access control and content permissions require sophisticated role-based systems'
-    ],
-    futureImprovements: [
-      'Implement AI-based learning path personalization',
-      'Add gamification elements to increase engagement',
-      'Develop advanced plagiarism detection for assignments',
-      'Create mobile app with offline learning capabilities',
-      'Add integration with popular virtual reality platforms'
-    ],
-    screenshots: [
-      'https://images.pexels.com/photos/5905625/pexels-photo-5905625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/5905558/pexels-photo-5905558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/5905555/pexels-photo-5905555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    ]
-  },
-  {
-    id: 'finance-tracker',
-    title: 'Personal Finance Tracker',
-    description: 'A comprehensive financial management application with expense tracking, budgeting, and investment monitoring.',
-    detailedDescription: 'This personal finance application helps users take control of their financial life by tracking expenses, managing budgets, setting financial goals, and monitoring investments. It features automatic categorization of transactions, visual reports, and predictive analysis to help users make informed financial decisions.',
-    image: 'https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'D3.js', 'Plaid API'],
-    demoUrl: 'https://finance-demo.ekizulfar.com',
-    githubUrl: 'https://github.com/HersiKopani/finance-tracker',
-    features: [
-      'Bank account and credit card synchronization',
-      'Automatic transaction categorization',
-      'Budget creation and tracking',
-      'Financial goal setting and monitoring',
-      'Investment portfolio tracking',
-      'Expense analytics and reports',
-      'Bill payment reminders and recurring transaction tracking'
-    ],
-    problemStatement: 'Many people struggle with maintaining financial awareness and making informed decisions due to fragmented financial data across multiple accounts and institutions.',
-    solution: 'I created a unified financial dashboard that aggregates data from multiple sources, automatically categorizes transactions, and provides actionable insights to help users improve their financial health.',
-    techStack: [
-      {
-        category: 'Frontend',
-        items: ['React', 'Redux', 'Styled Components', 'D3.js', 'Recharts']
-      },
-      {
-        category: 'Backend',
-        items: ['Node.js', 'Express', 'MongoDB', 'Mongoose']
-      },
-      {
-        category: 'Financial Data',
-        items: ['Plaid API', 'Alphavantage API', 'CoinGecko API']
-      },
-      {
-        category: 'Security',
-        items: ['JWT', 'OAuth 2.0', 'Data Encryption', 'Secure Storage']
-      }
-    ],
-    challenges: [
-      {
-        title: 'Financial Data Integration',
-        description: 'Integrating with multiple financial institutions through APIs while handling authentication and data synchronization securely required careful API design.'
-      },
-      {
-        title: 'Transaction Categorization',
-        description: 'Building an accurate automatic categorization system for financial transactions required implementing machine learning algorithms and user feedback mechanisms.'
-      },
-      {
-        title: 'Data Visualization',
-        description: 'Creating intuitive visualizations of complex financial data that provide actionable insights required thoughtful UX design and performance optimization.'
-      }
-    ],
-    lessons: [
-      'Financial data requires exceptional security measures throughout the application',
-      'Machine learning models improve significantly with user feedback for categorization',
-      'Performance optimization is crucial when dealing with large transaction datasets',
-      'Customizable dashboards are essential for diverse financial situations'
-    ],
-    futureImprovements: [
-      'Implement AI-powered financial advice and insights',
-      'Add scenario planning for major financial decisions',
-      'Develop tax optimization suggestions',
-      'Create debt repayment optimization tools',
-      'Add comprehensive retirement planning features'
-    ],
-    screenshots: [
-      'https://images.pexels.com/photos/6694530/pexels-photo-6694530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/6694477/pexels-photo-6694477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      'https://images.pexels.com/photos/6694503/pexels-photo-6694503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    ]
-  },
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+  },  
 ];
 
 export default projectsData;

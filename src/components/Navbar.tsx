@@ -47,9 +47,9 @@ const Navbar = () => {
           <NavLink to="/projects" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
             Projects
           </NavLink>
-          <NavLink to="/blogs" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
+          {/* <NavLink to="/blogs" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
             Blogs
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/contact" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
             Contact
           </NavLink>

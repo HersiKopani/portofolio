@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Download, Briefcase, GraduationCap, Code, Award } from 'lucide-react';
+import { Download, Code } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 import Button from '../components/Button';
 import SkillBar from '../components/SkillBar';
 import TimelineItem from '../components/TimelineItem';
-import skillsData, { getSkillsByCategory } from '../data/skillsData';
+import { getSkillsByCategory } from '../data/skillsData';
 import timelineData from '../data/timelineData';
 import { Cloud, Brain } from 'lucide-react'
 const About = () => {
@@ -36,9 +36,9 @@ const About = () => {
               <div className="relative mb-6">
                 <div className="w-full aspect-square rounded-2xl overflow-hidden">
                   <img 
-                    src="/../../profile-palestine.png"  
+                    src="/../../personal-palestine-map.png"  
                     alt="Hersi K." 
-                    className="w-80%] h-full object-cover"
+                    className="w-full h-95%] object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/30 rounded-full blur-xl -z-10"></div>
