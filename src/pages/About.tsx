@@ -36,7 +36,7 @@ const About = () => {
               <div className="relative mb-6">
                 <div className="w-full aspect-square rounded-2xl overflow-hidden">
                   <img 
-                    src="/../../profile-palestine.png"  
+                    src="/../../personal-palestine-map.png"  
                     alt="Hersi K." 
                     className="w-80%] h-full object-cover"
                   />
