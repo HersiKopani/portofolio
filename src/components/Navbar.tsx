@@ -54,7 +54,7 @@ const Navbar = () => {
             Contact
           </NavLink>
           <a 
-            href="/resume.pdf" 
+            href="/../HersiKopani_SeniorJavaEng.pdf" 
             className="btn btn-primary flex items-center gap-2"
             target="_blank"
             rel="noopener noreferrer"

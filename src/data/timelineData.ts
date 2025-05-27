@@ -9,34 +9,46 @@ export interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
-    year: '2023',
-    title: 'Internship at TechInnovate',
-    description: 'Worked as a frontend developer intern, contributing to the development of a healthcare management system using React and TypeScript.',
+    year: '2024 - Present',
+    title: 'Assistant Lecturer  At Beder College',
+    description: 'Delivered lectures on Cloud Computing and Advanced Web Development.',
     icon: Briefcase
   },
   {
-    year: '2022',
-    title: 'Web Development Certification',
-    description: 'Earned a comprehensive web development certification, focusing on modern JavaScript frameworks and responsive design techniques.',
-    icon: Award
+    year: '2022 - Present',
+    title: 'Tech Leader | Java Software Engineer  At Walgreens Boots Alliance',
+    description: 'Led and mentored a team of 4 engineers in developing scalable, cloud-native microservices with Spring Boot',
+    icon: Briefcase
   },
   {
-    year: '2021',
-    title: 'Bachelor\'s Degree Program',
-    description: 'Started Computer and Telecommunications Engineering program at Bandung Institute of Technology (ITB).',
+    year: '2021-2023',
+    title: 'Java Software Engineer At Volvo Group',
+    description: 'Delivered a modular tax computation system supporting 60+ countries, ensuring compliance and audit readiness',
+    icon: Briefcase
+  },
+  {
+    year: '2020-2021',
+    title: 'Software Engineer At MoreOne Technology',
+    description: 'Automated electronic signature functionality for invoices on encrypted files using Node.js library, eliminating manual tasks previously performed by team',
+    icon: Briefcase
+  }, 
+  {
+    year: '2018-2020',
+    title: 'Software Engineer  At Division5',
+    description: 'Developed RESTful services using JAX-RS on Spring Boot projects, improving legacy system functionalities.',
+    icon: Briefcase
+  },
+  {
+    year: '2017-2019',
+    title: 'Master of Science Degree Program',
+    description: 'Information Security',
     icon: GraduationCap
   },
   {
-    year: '2020',
-    title: 'First Freelance Project',
-    description: 'Completed first freelance web development project, building an e-commerce website for a local business using HTML, CSS, and JavaScript.',
-    icon: Code
-  },
-  {
-    year: '2019',
-    title: 'Programming Competition',
-    description: 'Won second place in a regional coding competition, demonstrating proficiency in algorithmic problem-solving and efficient programming.',
-    icon: Award
+    year: '2014-2017',
+    title: 'Bachelor\'s Degree Program',
+    description: 'Business Informatics',
+    icon: GraduationCap
   }
 ];
 
