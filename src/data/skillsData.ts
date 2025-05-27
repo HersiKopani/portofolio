@@ -1,7 +1,7 @@
 interface Skill {
   name: string;
   percentage: number;
-  category: 'frontend' | 'backend' | 'tools' | 'languages';
+  category: 'backend' | 'frontend' | 'tools' | 'languages' | 'cloud'| 'automation' | 'languages';
 }
 
 const skillsData: Skill[] = [
@@ -13,64 +13,44 @@ const skillsData: Skill[] = [
   },
   {
     name: 'JavaScript',
-    percentage: 90,
+    percentage: 70,
     category: 'frontend'
   },
   {
     name: 'React',
-    percentage: 88,
-    category: 'frontend'
-  },
-  {
-    name: 'TypeScript',
-    percentage: 85,
-    category: 'frontend'
-  },
-  {
-    name: 'Next.js',
-    percentage: 82,
-    category: 'frontend'
-  },
-  {
-    name: 'Tailwind CSS',
-    percentage: 90,
-    category: 'frontend'
-  },
-  {
-    name: 'Vue.js',
-    percentage: 75,
+    percentage: 50,
     category: 'frontend'
   },
   
   // Backend
   {
-    name: 'Node.js',
-    percentage: 80,
+    name: 'Spring MVC / Boot',
+    percentage: 90,
     category: 'backend'
   },
   {
-    name: 'Express',
-    percentage: 82,
+    name: 'Nodejs',
+    percentage: 60,
     category: 'backend'
   },
   {
-    name: 'Firebase',
-    percentage: 78,
+    name: 'Mysql',
+    percentage: 85,
     category: 'backend'
   },
   {
     name: 'MongoDB',
-    percentage: 72,
+    percentage: 70,
     category: 'backend'
   },
   {
     name: 'PostgreSQL',
-    percentage: 68,
+    percentage: 70,
     category: 'backend'
   },
   {
     name: 'REST API',
-    percentage: 85,
+    percentage: 100,
     category: 'backend'
   },
   {
@@ -96,46 +76,37 @@ const skillsData: Skill[] = [
     category: 'tools'
   },
   {
-    name: 'Vite',
-    percentage: 80,
-    category: 'tools'
-  },
-  {
     name: 'CI/CD',
     percentage: 72,
     category: 'tools'
   },
+  // cloud
   {
     name: 'AWS',
-    percentage: 60,
-    category: 'tools'
+    percentage: 80,
+    category: 'cloud'
   },
   {
-    name: 'Figma',
-    percentage: 78,
-    category: 'tools'
+    name: 'Azure',
+    percentage: 60,
+    category: 'cloud'
   },
   
   // Languages
   {
     name: 'Java',
-    percentage: 60,
+    percentage: 90,
     category: 'languages'
   },
   {
     name: 'Python',
-    percentage: 65,
+    percentage: 60,
     category: 'languages'
   },
-  {
-    name: 'C++',
-    percentage: 50,
-    category: 'languages'
-  }
 ];
 
 export default skillsData;
 
-export const getSkillsByCategory = (category: 'frontend' | 'backend' | 'tools' | 'languages'): Skill[] => {
+export const getSkillsByCategory = (category: 'frontend' | 'backend' | 'tools' | 'languages' | 'cloud' | 'automation'): Skill[] => {
   return skillsData.filter(skill => skill.category === category);
 };
