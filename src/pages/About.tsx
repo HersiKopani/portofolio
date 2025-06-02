@@ -7,6 +7,7 @@ import TimelineItem from '../components/TimelineItem';
 import { getSkillsByCategory } from '../data/skillsData';
 import timelineData from '../data/timelineData';
 import { Cloud, Brain } from 'lucide-react'
+import mapImage from '../assets/personal-palestine-map.png'; 
 const About = () => {
   const [activeSkillCategory, setActiveSkillCategory] = useState<'frontend' | 'backend' | 'tools' | 'languages'>('backend');
   
@@ -36,7 +37,7 @@ const About = () => {
               <div className="relative mb-6">
                 <div className="w-full aspect-square rounded-2xl overflow-hidden">
                   <img 
-                    src="/../../personal-palestine-map.png"  
+                    src={mapImage}
                     alt="Hersi K." 
                     className="w-full h-95%] object-cover"
                   />
