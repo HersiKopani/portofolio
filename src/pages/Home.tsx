@@ -4,6 +4,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import Button from '../components/Button';
 import StatCard from '../components/StatCard';
 import statsData from '../data/statsData';
+import mapImage from '../assets/profile-palestine.png'; 
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -87,7 +88,7 @@ const Home = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary via-secondary to-accent p-1 shadow-glow">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
-                    src="../profile-palestine.png" 
+                    src={mapImage}
                     alt="Hersi K." 
                     className="w-full h-full object-cover object-[center_10%]"
                   />
