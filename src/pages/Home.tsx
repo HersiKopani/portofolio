@@ -4,7 +4,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import Button from '../components/Button';
 import StatCard from '../components/StatCard';
 import statsData from '../data/statsData';
-import mapImage from '../assets/profile-palestine.png'; 
+import mapImage from '../assets/personal-palestine-map.png'; 
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
