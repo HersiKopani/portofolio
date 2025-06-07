@@ -5,7 +5,7 @@ import Button from '../components/Button';
 import StatCard from '../components/StatCard';
 import statsData from '../data/statsData';
 import mapImage from '../assets/personal-palestine-map.png'; 
-import mapCV from '/../assets/HersiKopani_SeniorJavaEng.pdf';
+import mapCV from '../assets/HersiKopani_SeniorJavaEng.pdf';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
