@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Download } from 'lucide-react';
-
+import mapCV from '/../assets/HersiKopani_SeniorJavaEng.pdf';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -57,7 +57,7 @@ const Navbar = () => {
             Contact
           </NavLink>
           <a 
-            href="/../HersiKopani_SeniorJavaEng.pdf" 
+            href={mapCV}}
             className="btn btn-primary flex items-center gap-2"
             target="_blank"
             rel="noopener noreferrer"
