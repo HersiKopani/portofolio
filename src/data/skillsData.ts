@@ -18,9 +18,25 @@ const skillsData: Skill[] = [
   },
   {
     name: 'React',
-    percentage: 50,
+    percentage: 20,
     category: 'frontend'
   },
+  {
+    name: 'Angular',
+    percentage: 30,
+    category: 'frontend'
+  },
+  {
+    name: 'Redux',
+    percentage: 30,
+    category: 'frontend'
+  },
+  {
+    name: 'Jest',
+    percentage: 30,
+    category: 'frontend'
+  },
+
   
   // Backend
   {
@@ -61,8 +77,8 @@ const skillsData: Skill[] = [
   
   // Tools & Platforms
   {
-    name: 'Git',
-    percentage: 88,
+    name: 'GIT',
+    percentage: 80,
     category: 'tools'
   },
   {
@@ -77,17 +93,47 @@ const skillsData: Skill[] = [
   },
   {
     name: 'CI/CD',
-    percentage: 72,
+    percentage: 70,
+    category: 'tools'
+  },
+   {
+    name: 'DataDod',
+    percentage: 70,
+    category: 'tools'
+  },
+  {
+    name: 'Grafana',
+    percentage: 60,
     category: 'tools'
   },
   // cloud
   {
-    name: 'AWS',
-    percentage: 80,
+    name: 'Cloud Platforms AWS & Azure',
+    percentage: 85,
     category: 'cloud'
   },
   {
-    name: 'Azure',
+    name: 'EC2, Lambda',
+    percentage: 85,
+    category: 'cloud'
+  },
+  {
+    name: 'S3 & Azure Blob',
+    percentage: 85,
+    category: 'cloud'
+  },
+  {
+    name: 'VPC, Load Balancers, Route53',
+    percentage: 85,
+    category: 'cloud'
+  },
+  {
+    name: 'CloudWatch',
+    percentage: 85,
+    category: 'cloud'
+  },
+    {
+    name: 'Terraform',
     percentage: 60,
     category: 'cloud'
   },
@@ -103,6 +149,48 @@ const skillsData: Skill[] = [
     percentage: 60,
     category: 'languages'
   },
+  {
+    name: 'JavaScript / TypeScript',
+    percentage: 20,
+    category: 'languages'
+  },
+   {
+    name: 'Kotlin',
+    percentage: 50,
+    category: 'languages'
+  },
+  {
+    name: 'SQL',
+    percentage: 85,
+    category: 'languages'
+  },
+  {
+    name: 'NOSQL',
+    percentage: 50,
+    category: 'languages'
+  },
+  // Automation
+  {
+    name: 'DevOps Automation',
+    percentage: 70,
+    category: 'automation'
+  },
+  {
+    name: 'CI/CD Pipelines',
+    percentage: 70,
+    category: 'automation'
+  },
+  {
+    name: 'Infrastructure as Code (IaC)',
+    percentage: 60,
+    category: 'automation'
+  },
+  {
+    name: 'Monitoring & Logging',
+    percentage: 60,
+    category: 'automation'
+  }
+  
 ];
 
 export default skillsData;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Download, Code } from 'lucide-react';
+import { Download, Code,  Pen,  MapPin, Library } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 import Button from '../components/Button';
 import SkillBar from '../components/SkillBar';
@@ -8,6 +8,7 @@ import { getSkillsByCategory } from '../data/skillsData';
 import timelineData from '../data/timelineData';
 import { Cloud, Brain } from 'lucide-react'
 import mapImage from '../assets/personal-palestine-map.png'; 
+import mapCV from '/../HersiKopani_SeniorJavaEng.pdf';
 const About = () => {
   const [activeSkillCategory, setActiveSkillCategory] = useState<'frontend' | 'backend' | 'tools' | 'languages'>('backend');
   
@@ -47,11 +48,11 @@ const About = () => {
               </div>
               
               <div className="text-center mt-8">
-                <Button
-                  href="/resume.pdf"
+                 <Button
+                  onClick={() => window.scrollTo(0, 0)}
+                  href={mapCV}
                   variant="primary"
                   icon={<Download size={18} />}
-                  className="w-full md:w-auto"
                 >
                   Download CV
                 </Button>
@@ -64,12 +65,12 @@ const About = () => {
               </h3>
               
               <p className="text-gray-300 mb-4">
-                Hello! I'm Hersi Kopnai, senior Java Software Engineer with 6+ years of experience building scalable, cloud-native applications and distributed systems. 
-                Currently serving as Tech Leader at Walgreens Boot Alliance, where I lead a team of engineers in developing microservices with Spring Boot.</p>
+                Hello! I'm Hersi kopani, senior Java Software Engineer with 6+ years of experience building scalable, cloud-native applications and distributed systems. 
+                Currently serving as Tech Leader @ Walgreens Boot Alliance, where I lead a team of engineers in developing microservices with Spring Boot.</p>
               <p className="text-gray-400 mb-6">
               I specialize in backend development using Java 17/21, Spring Boot, and cloud platforms like AWS and Azure. My expertise spans from designing RESTful APIs and implementing real-time data streaming with Apache Kafka to establishing robust CI/CD pipelines and DevOps automation.</p>
               <p className="text-gray-400 mb-6">
-              I hold an M.Sc. in Information Security and am AWS Certified Cloud Practitioner, currently pursuing Terraform and Agent AI certifications. My passion extends beyond coding to exploring system design patterns, AI architecture, and the latest in distributed systems..</p>
+              I hold an M.Sc. in Information Security and I am AWS Certified Cloud Practitioner, currently pursuing Terraform and Agent AI certifications. My passion extends beyond coding to exploring system design patterns, AI architecture, and the latest in distributed systems.</p>
               <p className="text-gray-400 mb-8">
               When I'm not architecting solutions, you'll find me traveling to discover new cultures, diving into technical books, or exploring the fascinating world of AI system design. I believe in continuous learning and delivering enterprise-grade solutions through clean, maintainable code.</p>
               
@@ -109,19 +110,18 @@ const About = () => {
               {skillCategories.map(category => (
                 <button
                   key={category.id}
+                  onClick={() => setActiveSkillCategory(category.id as any)}
                   className={`px-4 py-2 rounded-full transition-all ${
                     activeSkillCategory === category.id 
                       ? 'bg-primary text-white' 
                       : 'bg-background-light text-gray-300 hover:bg-gray-700'
                   }`}
-                  onClick={() => setActiveSkillCategory(category.id as any)}
                 >
                   {category.label}
                 </button>
               ))}
             </div>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {filteredSkills.map((skill, index) => (
               <SkillBar 
@@ -182,7 +182,7 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">AI and ML Programming</h3>
               <p className="text-gray-400">
-              Exploring AI and machine learning challenges helps me deepen my understanding of intelligent systems, optimize algorithmic thinking, and discover innovative approaches to complex data problems.
+              Exploring AI and machine learning challenges helps me deepen my understanding of intelligent systems & discover innovative approaches.
               </p>
             </div>
             
@@ -192,8 +192,32 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Cloud and Automation</h3>
               <p className="text-gray-400">
-              Working with cloud technologies and automation pipelines helps me streamline deployment processes, optimize infrastructure costs, and build resilient systems that scale effortlessly.
+              Working with cloud technologies and automation pipelines helps me streamline deployment processes and build resilient systems that scale effortlessly.
               </p>
+            </div>
+            <div className="card hover:shadow-glow">
+              <div className="mb-4 p-3 bg-primary/20 rounded-lg w-fit">
+                <Pen size={28} className="text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Writing Books</h3>
+              <p className="text-gray-400">
+                I enjoy crafting narratives and exploring creative expression through writing, finding fulfillment in developing characters, plots, and sharing stories that resonate with readers. <span className="text-primary"><br />"Finding you"</span> is one of them.</p>
+            </div>
+            <div className="card hover:shadow-glow">
+              <div className="mb-4 p-3 bg-primary/20 rounded-lg w-fit">
+                <MapPin size={28} className="text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Traveling around the world</h3>
+              <p className="text-gray-400">
+              Exploring diverse cultures, cuisines, and landscapes fuels my curiosity and broadens my perspective, while creating meaningful connections and unforgettable experiences across different countries. <span className="text-primary"><br />"Moroco"</span> is next. </p>
+            </div>
+            <div className="card hover:shadow-glow">
+              <div className="mb-4 p-3 bg-primary/20 rounded-lg w-fit">
+                <Library size={28} className="text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Reading books</h3>
+              <p className="text-gray-400">
+              I'm passionate about continuous learning through literature, diving into various genres from fiction to technical books, which expands my knowledge and provides both entertainment and intellectual growth.<span className="text-primary"><br />...... My Library - My Legacy .....</span></p>
             </div>
           </div>
         </div>

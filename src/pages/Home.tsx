@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import StatCard from '../components/StatCard';
 import statsData from '../data/statsData';
 import mapImage from '../assets/personal-palestine-map.png'; 
+import mapCV from '/../HersiKopani_SeniorJavaEng.pdf';
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +41,7 @@ const Home = () => {
               
               <div className="flex flex-wrap gap-4 mb-8">
                 <Button
-                  href="/../HersiKopani_SeniorJavaEng.pdf"
+                  href={mapCV}
                   variant="primary"
                   icon={<Download size={18} />}
                 >
@@ -144,11 +145,11 @@ const Home = () => {
               <p className="text-gray-400 mb-8">
               When I'm not architecting microservices or optimizing performance, 
               you'll find me exploring new destinations around the world or diving deep into a good book. 
-              Both hobbies fuel my curiosity and bring fresh perspectives to my approach to software engineering.
               </p>
               
               <Link 
                 to="/about" 
+                onClick={() => window.scrollTo(0, 0)}
                 className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-light group"
               >
                 Learn more about me
@@ -175,6 +176,7 @@ const Home = () => {
               
               <Link 
                 to="/projects" 
+                onClick={() => window.scrollTo(0, 0)}
                 className="inline-flex items-center text-sm font-medium text-primary hover:text-primary-light group"
               >
                 View my project portfolio
@@ -192,14 +194,14 @@ const Home = () => {
           <p className="text-gray-300 max-w-2xl mx-auto mb-8">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
-          <Button
-            to="/contact"
-            variant="primary"
-            size="lg"
-            className="mx-auto"
-          >
-            Get in Touch
-          </Button>
+      <div className="relative z-50">
+        <Link to="/contact" 
+        onClick={() => window.scrollTo(0, 0)}
+        className="mx-auto">
+
+          <Button variant="primary" size="lg">Get in Touch</Button>
+        </Link>
+      </div>
         </div>
       </section>
     </div>
