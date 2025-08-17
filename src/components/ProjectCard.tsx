@@ -11,6 +11,7 @@ interface ProjectCardProps {
   tags: string[];
   demoUrl?: string;
   githubUrl?: string;
+
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({

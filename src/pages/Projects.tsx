@@ -7,13 +7,13 @@ const Projects = () => {
   const [filter, setFilter] = useState<string>('all');
   
   // Extract unique tags for filter
-  const allTags = projectsData.reduce((tags: string[], project) => {
-    project.tags.forEach(tag => {
-      if (!tags.includes(tag)) {
-        tags.push(tag);
+  const allTags = projectsData.reduce((techCategory: string[], project) => {
+    project.techCategory.forEach(group => {
+      if (!techCategory.includes(group)) {
+        techCategory.push(group);
       }
     });
-    return tags;
+    return techCategory;
   }, []);
   
   // Sort tags alphabetically
@@ -22,7 +22,7 @@ const Projects = () => {
   // Filter projects based on selected tag
   const filteredProjects = filter === 'all' 
     ? projectsData 
-    : projectsData.filter(project => project.tags.includes(filter));
+    : projectsData.filter(project => project.techCategory.includes(filter));
   
   return (
     <div className="min-h-screen pt-24">

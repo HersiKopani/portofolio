@@ -23,7 +23,9 @@ export interface Project {
   lessons: string[];
   futureImprovements: string[];
   screenshots: string[];
+  techCategory: string[];
 }
+
 
 const projectsData: Project[] = [
   {
@@ -72,7 +74,8 @@ const projectsData: Project[] = [
       "Real-time factory dashboard",
       "Predictive maintenance integration"
     ],
-    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"],
+    techCategory: ["CLOUD"]
   },
   {
     "id": "walgreens-store-system",
@@ -120,7 +123,8 @@ const projectsData: Project[] = [
       "Predictive inventory analytics",
       "Integration with wearable health devices"
     ],
-    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"],
+      techCategory: ["BACKEND"]
   },  
   {
     "id": "invoice-validation-system",
@@ -168,7 +172,8 @@ const projectsData: Project[] = [
       "AI fraud detection module",
       "Invoice audit trail visualization"
     ],
-    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"],
+    techCategory: ["FRONTEND", "BACKEND"]
   },  
   {
     "id": "service-pay-system",
@@ -186,6 +191,7 @@ const projectsData: Project[] = [
       "Dashboard analytics",
       "Monitoring with Grafana & Datadog"
     ],
+      techCategory: ["DATABASE", "BACKEND"],
     "problemStatement": "Banks needed a reliable and efficient system for managing service payments with full observability.",
     "solution": "Delivered a secure and monitored backend that tracks transactions and provides insightful analytics.",
     "techStack": [
@@ -264,7 +270,8 @@ const projectsData: Project[] = [
       "Mobile app integration",
       "Fitness progress tracking module"
     ],
-    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"],
+    techCategory: ["AI/ML"]
   },  
   {
     "id": "e-tourism-albania",
@@ -316,7 +323,8 @@ const projectsData: Project[] = [
       "AI-based travel planner",
       "Mobile app with offline support"
     ],
-    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"]
+    "screenshots": ["../../volvo1.png", "../../volvo2.png", "../../volvo3.png"],
+    techCategory: ["FULLSTACK"]
   },  
 ];
 
